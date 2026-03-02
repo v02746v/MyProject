@@ -334,10 +334,12 @@ footer {
     padding: 30px 0;
     margin-top: 40px;
     border-top: 5px solid #e63946;
+    width: 100%;
 }
 
 .footer-content {
     max-width: 900px;
+    min-width: 450px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -372,12 +374,201 @@ footer {
         flex-direction: column;
     }
     
+    footer {
+        width: 100%;
+    }
+
     h1 {
         font-size: 2.2rem;
     }
     
     .color-list {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Общие настройки */
+    * {
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Header */
+    header {
+        padding: 25px 0;
+    }
+
+    .header-content {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .scientific-label {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+        margin-top: 15px;
+    }
+
+    /* Контент и сайдбар */
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-content,
+    .sidebar {
+        min-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Заголовки и текст */
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin: 20px 0 12px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+
+    .highlight,
+    .warning {
+        padding: 12px;
+        margin: 15px 0;
+        font-size: 0.9rem;
+    }
+
+    /* Списки и ссылки */
+    .link {
+        font-size: 17px;
+    }
+
+    .list-item {
+        margin-top: 8px;
+    }
+
+    /* Карточки красителей */
+    .color-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .color-item {
+        padding: 15px;
+    }
+
+    .color-item h4 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .color-item p {
+        font-size: 0.9rem;
+    }
+
+    /* Таблицы */
+    .data-table {
+        font-size: 0.8rem;
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 4px;
+    }
+
+    .table__middle {
+        font-size: 0.85rem;
+    }
+
+    /* Изображения */
+    .image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .mitoz_image,
+    .diagram,
+    .formula {
+        width: 100%;
+    }
+
+    .molecule {
+        width: 180px;
+        height: 130px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 25px 0;
+    }
+
+    .footer-content {
+        padding: 0 15px;
+    }
+
+    .footer-copyright {
+        font-size: 0.9rem;
+    }
+
+    .references {
+        font-size: 0.85rem;
+    }
+
+    .references ul {
+        padding-left: 5px;
+    }
+
+    /* Иконки */
+    .icon {
+        margin-right: 6px;
+        font-size: 0.9em;
+    }
+
+    .list-item .icon {
+        width: 14px;
+    }
+
+    /* Блок "Итоги" */
+    .itogi {
+        gap: 12px;
+    }
+
+    .advantage__text {
+        font-size: 1rem !important;
+    }
+
+        .chemical-formula {
+        font-size: 0.9rem;
+        padding: 2px 6px;
     }
 }
 
