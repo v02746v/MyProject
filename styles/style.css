@@ -6,12 +6,18 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    width: 100%;
+    min-width: 320px;
+}
+
 body {
     background-color: #f5f7fa;
     color: #333;
     line-height: 1.6;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
 }
 
 .container {
@@ -20,25 +26,20 @@ body {
     padding: 20px;
 }
 
-.color-list p, h4 {
-    user-select: none;
-}
-
-.support {
-    user-select: none;
-}
-
-.images img{
+.image img{
     width: 350px;
 }
 
 header {
+    width: 100%;
+    min-width: 320px;
     background: linear-gradient(135deg, #1a3a8f 0%, #2c5aa0 100%);
     color: white;
     padding: 40px 0;
     text-align: center;
     border-bottom: 5px solid #e63946;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 .header-content {
@@ -243,7 +244,6 @@ p {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-    user-select: none;
 }
 
 .characteristics {
@@ -332,14 +332,16 @@ footer {
     color: white;
     text-align: center;
     padding: 30px 0;
-    margin-top: 40px;
     border-top: 5px solid #e63946;
     width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
 }
 
 .footer-content {
     max-width: 900px;
-    min-width: 450px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -373,11 +375,8 @@ footer {
     .content-wrapper {
         flex-direction: column;
     }
-    
-    footer {
-        width: 100%;
-    }
 
+    
     h1 {
         font-size: 2.2rem;
     }
@@ -395,7 +394,7 @@ footer {
     
     html, body {
         width: 100%;
-	overflow-x: hidden;
+        overflow-x: hidden;
     }
 
     .container {
@@ -547,7 +546,7 @@ footer {
         padding-left: 5px;
     }
 
-    /* Иконки */
+
     .icon {
         margin-right: 6px;
         font-size: 0.9em;
@@ -557,7 +556,7 @@ footer {
         width: 14px;
     }
 
-    /* Блок "Итоги" */
+
     .itogi {
         gap: 12px;
     }
@@ -566,7 +565,8 @@ footer {
         font-size: 1rem !important;
     }
 
-        .chemical-formula {
+
+    .chemical-formula {
         font-size: 0.9rem;
         padding: 2px 6px;
     }
